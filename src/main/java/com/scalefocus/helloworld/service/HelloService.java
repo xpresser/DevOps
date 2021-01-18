@@ -7,6 +7,6 @@ public class HelloService implements HelloWorld {
 
     @Override
     public String sayHello() {
-        return "Hello, Release!\n";
+        return "Hello, Sofia!\n";
     }
 }
