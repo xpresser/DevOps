@@ -8,7 +8,7 @@ EXPOSE 8080
 VOLUME /tmp
 
 # Spring Boot REST application's jar file
-ARG JAR_FILE=*.jar
+ARG JAR_FILE=/target/*.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar","-Djava.security.egd=file:/dev/./urandom"]
 
